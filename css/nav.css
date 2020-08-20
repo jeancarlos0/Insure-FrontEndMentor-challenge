@@ -1,0 +1,44 @@
+.nav{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6rem;
+}
+
+.nav .links{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav .links a{
+    color: var(--Dark-Grayish-Violet);
+    transform: all 0.2s;
+    font-weight: 700;
+}
+
+.nav .links a:hover{
+    color: var(--Dark-violet);
+}
+
+.nav .links a:last-of-type{
+    font-weight: 700;
+    color: var(--Dark-violet);
+    border: 2px solid;
+    border-color: var(--Dark-violet);
+    padding: 15px 30px;
+}
+
+.nav .links a:last-of-type:hover{
+    color: white;
+    background-color: var(--Dark-violet);
+}
+
+@media(max-width:700px){
+    .nav .links{
+        display: none;
+    }
+
+}
