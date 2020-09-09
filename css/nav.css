@@ -10,6 +10,8 @@
     display: none;
 }
 
+
+
 .nav .links{
     width: 60%;
     display: flex;
@@ -66,7 +68,21 @@
 
     #menu-icon{
         display: block;
+        z-index: 10000;
     }
 
+    .nav .active{
+        z-index: 1000;
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    
 
 }
